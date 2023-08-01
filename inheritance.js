@@ -3,6 +3,9 @@ constructor(_name, _age){
     this.name = _name;
     this.age = _age;
 }
+description(){
+    console.log("i am a person")
+}
 }
 class Programer extends Person {
     constructor(_name, _age, _year){
@@ -23,6 +26,7 @@ function  developSoftware(programers){
 }
 developSoftware(programers);
 console.log(programers);
+programers[0].description()
 
 let person=new Person("Karen",12)
 console.log(person);
